@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    position: sticky;
+    height: 60px;
+    padding: 0 32px;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-menu {
+    height: 100%;
+    display: flex;
+}
+
+.navbar-list {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.navbar-list li {
+    height: 100%;
+    padding: 0 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list li:hover {
+    background-color: #F0F0F0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.company-container, .profiles-container {
+    padding: 130px 0;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    /* background-color: beige; */
+}
+
+.text .title p {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.company-content {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    text-align: justify;
+    padding-top: 20px;
+    width: 600px;
+    line-height: 26px;
+}
+
+.text p{
+    font-size: 16px;
+    color: #252525;
+}
+
+.special-background {
+    background-color: beige;
+    overflow-x: hidden;
+}
+
+.features-container {
+    padding: 200px 0;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.feature-card {
+    height: 300px;
+    width: 300px;
+    background-color: lightgray;
+    padding: 40px 20px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+    align-items: center;
+    height: 100%;
+}
+
+.feature-content i {
+    font-size: 72px;
+}
+
+.feature-content button {
+    border-radius: 12px;
+    background-color: #252525;
+    color: white;
+    padding: 10px 20px;
+}
