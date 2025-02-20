@@ -21,6 +21,8 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: #252525;
+    color: white;
 }
 
 .logo {
@@ -30,7 +32,7 @@ main{
 
 .logo a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navbar-menu {
@@ -54,8 +56,13 @@ main{
     align-items: center;
 }
 
+.navbar-list li a {
+    text-decoration: none;
+    color: white;
+}
+
 .navbar-list li:hover {
-    background-color: #F0F0F0;
+    background-color: darkgray;
 }
 
 .container {
@@ -142,4 +149,30 @@ main{
     background-color: #252525;
     color: white;
     padding: 10px 20px;
+}
+
+.rating {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.star {
+    color: black;
+    transition: color 0.2s;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.star:hover {
+    color: yellow;
+}
+
+.star:hover ~ .star {
+    color: gray;
+}
+
+#ratingValue {
+    font-weight: bold;
 }
